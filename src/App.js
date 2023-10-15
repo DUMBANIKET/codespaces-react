@@ -1,28 +1,36 @@
-import './App.css';
+import About from './components/About'
+import Project from "./components/Project";
+import Navbar from "./components/Navbar"
+import Landing from './components/Landing';
+
+
+
 
 function App() {
+
+  
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
+   <>
+<div className='mb-20'>
+<Navbar about={"about"}/>
+</div>
+    <div className="m-5 mx-12 ">
+   <div className='mt-10'>
+      <Landing/>
+   <About id="about"/>
+<Project/>
+   </div>
+
+</div>
+
+
+
+
+
+
+   </>
   );
 }
 
